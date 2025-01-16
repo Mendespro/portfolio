@@ -1,45 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #121212; 
+  color: #ffffff;
+}
+
+.container-bolhas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1; 
+  pointer-events: none;
+}
+
+.bolhas {
+  position: absolute;
+  display: flex;
+}
+
+.bolhas span {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #ffffff44,
+  0 0 50px #fff,
+  0 0 100px #fff;
+  animation: animar calc(150s / var(--i)) linear infinite;
+}
+
+@keyframes animar {
+  0% {
+      transform: translateY(100vh) scale(0);
   }
-  
-  h1, h2 {
-    color: #333;
+  100% {
+    transform: translateY(-10vh) scale(01);
   }
+}
+
+.bolhas span:nth-of-type(even) {
+  background: #1177ff;
+  box-shadow: 0 0 0 10px #1177ff44,
+  0 0 50px #1177ff,
+  0 0 100px #1177ff;
+}
+
+h1, h2 {
+  color: #333;
+}
   
-  a {
-    text-decoration: none;
-    color: #007BFF;
+a {
+  text-decoration: none;
+  color: #007BFF;
+}
+  
+a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
   }
-  
-  a:hover {
-    text-decoration: underline;
+
+  .skills ul {
+    flex-direction: column;
+    align-items: center;
   }
-  @media (max-width: 768px) {
-    .projects-container {
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    .skills ul {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .contact form {
-      padding: 20px;
-    }
+
+  .contact form {
+    padding: 20px;
   }
+}
   
-  @media (max-width: 480px) {
-    .projects-container {
-      grid-template-columns: 1fr;
-    }
-  
-    .header nav ul {
-      flex-direction: column;
-      gap: 10px;
-    }
+@media (max-width: 480px) {
+  .projects-container {
+    grid-template-columns: 1fr;
   }
-  
+
+  .header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

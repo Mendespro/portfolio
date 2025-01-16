@@ -4,6 +4,7 @@ import AboutMe from "../components/AboutMe";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 import ProjectCard from "../components/ProjectCard";
+import Footer from "../components/Footer";
 import { getProjects } from "../services/api";
 import { useState, useEffect } from "react";
 import "../styles/Home.css";
@@ -21,7 +22,24 @@ const Home = () => {
       }
     };
     fetchProjects();
-  }, []);
+
+  // Função para detectar o final da página
+  const handleScroll = () => {
+    if (
+      window.innerHeight + window.scrollY >=
+      document.body.scrollHeight
+    ) {
+      // Reinicia a rolagem para o início
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
+  // Adiciona o evento de scroll
+  window.addEventListener("scroll", handleScroll);
+
+  // Remove o evento de scroll ao desmontar o componente
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 
   return (
     <div className="home">
@@ -37,6 +55,7 @@ const Home = () => {
         </div>
       </section>
       <Contact />
+      <Footer />
     </div>
   );
 };
