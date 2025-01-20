@@ -13,7 +13,7 @@
     position: relative;
     bottom: 0;
     width: 100%;
-    visibility: hidden;
+    //visibility: hidden;
   }
   
   .footer p {

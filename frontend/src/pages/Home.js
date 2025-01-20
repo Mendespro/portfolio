@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+import Show from "../components/Show";
 import AboutMe from "../components/AboutMe";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
@@ -22,28 +23,12 @@ const Home = () => {
       }
     };
     fetchProjects();
-
-  // Função para detectar o final da página
-  const handleScroll = () => {
-    if (
-      window.innerHeight + window.scrollY >=
-      document.body.scrollHeight
-    ) {
-      // Reinicia a rolagem para o início
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-  };
-
-  // Adiciona o evento de scroll
-  window.addEventListener("scroll", handleScroll);
-
-  // Remove o evento de scroll ao desmontar o componente
-  return () => window.removeEventListener("scroll", handleScroll);
 }, []);
 
   return (
     <div className="home">
       <Header />
+      <Show />
       <AboutMe />
       <Skills />
       <section id="projects" className="projects">

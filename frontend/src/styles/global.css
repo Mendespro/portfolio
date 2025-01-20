@@ -6,6 +6,7 @@
 
 body {
   min-height: 100vh;
+  padding: 0 100px;
   font-family: Arial, sans-serif;
   background-color: #121212; 
   color: #ffffff;
@@ -41,10 +42,10 @@ body {
 
 @keyframes animar {
   0% {
-      transform: translateY(100vh) scale(0);
+      transform: translateY(-10vh) scale(01);
   }
   100% {
-    transform: translateY(-10vh) scale(01);
+    transform: translateY(100vh) scale(0);
   }
 }
 
