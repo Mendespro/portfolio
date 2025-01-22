@@ -6,8 +6,7 @@
 
 .contact {
     padding: 50px 20px;
-    //background-color: #f7f7f7;
-    //visibility: hidden;
+    backdrop-filter: blur(10px);
   }
   
   .contact h2 {

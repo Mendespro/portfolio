@@ -5,7 +5,6 @@
 }
 
 .footer {
-    //background-color: #222;
     color: #fff;
     text-align: center;
     padding: 20px 10px;
@@ -13,7 +12,6 @@
     position: relative;
     bottom: 0;
     width: 100%;
-    //visibility: hidden;
   }
   
   .footer p {

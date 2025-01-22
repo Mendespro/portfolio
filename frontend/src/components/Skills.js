@@ -9,7 +9,7 @@ import cppIcon from "../assets/icons8-cpp.svg";
 import javaIcon from "../assets/icons8-java.svg";
 import pythonIcon from "../assets/icons8-python.svg";
 import postgresIcon from "../assets/icons8-postgres.svg";
-import githubIcon from "../assets/icons8-github1.svg";
+import githubIcon from "../assets/icons8-github.svg";
 import fastifyIcon from "../assets/fastify.svg";
 import vueIcon from "../assets/icons8-vue.svg";
 import reactIcon from "../assets/icons8-react.svg";
@@ -42,7 +42,7 @@ const Skills = () => {
   return (
     <section id="skills" className="skills">
       <div><h2>Minhas Habilidades</h2></div>
-      <div className="scroll" style={{'--t':'1.5s'}}>
+      <div className="scroll" style={{'--t':'2s'}}>
         {technologies.map((tech, index) => (
           <div key={index} className="scroll-item">
               <img
@@ -55,12 +55,18 @@ const Skills = () => {
         ))}
         {technologies.map((tech, index) => (
           <div key={index + technologies.length} className="scroll-item">
-              <img
-                src={tech.icon}
-                alt={tech.name}
-                className="icon"
-                loading="lazy"
-              />
+            <img
+              src={tech.icon}
+              alt={tech.name}
+              className="icon"
+              loading="lazy"
+            />
+            <img
+              src={tech.icon}
+              alt={tech.name}
+              className="icon"
+              loading="lazy"
+            />
           </div>
         ))}
       </div>

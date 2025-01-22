@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap');
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-weight: 400
 }
 
 body {
   min-height: 100vh;
   padding: 0 100px;
-  font-family: Arial, sans-serif;
-  background-color: #121212; 
+  background-color: #000000; 
   color: #ffffff;
 }
 
@@ -34,15 +36,14 @@ body {
   background: #fff;
   margin: 0 4px;
   border-radius: 50%;
-  box-shadow: 0 0 0 10px #ffffff44,
-  0 0 50px #fff,
-  0 0 100px #fff;
+  box-shadow: 0 0 0 10px #ffffff44, 0 0 50px #fff, 0 0 100px #fff;
   animation: animar calc(150s / var(--i)) linear infinite;
+  transition: transform 0.2s ease-out;
 }
 
 @keyframes animar {
   0% {
-      transform: translateY(-10vh) scale(01);
+    transform: translateY(-10vh) scale(01);
   }
   100% {
     transform: translateY(100vh) scale(0);
@@ -92,4 +93,12 @@ a:hover {
     flex-direction: column;
     gap: 10px;
   }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1177ff;
 }

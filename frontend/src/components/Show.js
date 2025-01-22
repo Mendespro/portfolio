@@ -1,25 +1,37 @@
-import React from "react";
+import React from "react"; 
 import "../styles/Show.css";
 import persona from "../assets/persona.png";
+import githubIcon from "../assets/icons8-github1.svg";
+import linkedinIcon from "../assets/icons8-linkedin.svg";
+import instagramIcon from "../assets/icons8-instagram-48.svg";
+
 const Show = () => {
   return (
     <section id="show" className="show-me">
         <div className="interface">
-            <div className="flex">
-                <div className="img-show">
-                    <img src={persona} alt="persona" />
+            <div className="img-show">
+                <img src={persona} alt="persona" />
+            </div>
+            <div className="txt-show">
+                <div>
+                    <h4>Olá<span>,</span> Seja Bem-Vindo<span>.</span></h4>
                 </div>
-                <div className="txt-show">
-                    <h1>Tenha <span>.</span></h1>
+                <div>
+                    <h1>Sou <span data-text="Isaias">Isaias</span></h1>
+                </div>
+                <div>
                     <p>
-                        Olá, sou um desenvolvedor apaixonado por criar soluções 
-                        inovadoras na web. Tenho experiência em JavaScript, React,
-                        Node.js, e outras tecnologias. Gosto de resolver problemas
-                        e melhorar a experiência do usuário com minhas aplicações.
+                        Desenvolvedor Frontend e melhorar a experiência do usuário com minhas aplicações.
                     </p>
-                    <div className="btn-contact">
-                        <a href="#contact">
-                            <button>Entre em contato</button>
+                    <div className="social-icons">
+                        <a href="https://github.com/Mendespro/" target="_blank" rel="noopener noreferrer">
+                            <img src={githubIcon} alt="GitHub" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/isaias-mendes-971873226/" target="_blank" rel="noopener noreferrer">
+                            <img src={linkedinIcon} alt="LinkedIn" />
+                        </a>
+                        <a href="https://www.instagram.com/isaias.rome/" target="_blank" rel="noopener noreferrer">
+                            <img src={instagramIcon} alt="Instagram" />
                         </a>
                     </div>
                 </div>

@@ -12,31 +12,32 @@
   padding: 4rem 0;
   color: #fff;
   text-align: center;
+  backdrop-filter: blur(10px);
 }
   
 .skills h2 {
   color: #ffffff;
   font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3.5rem;
 }
 
 .scroll{
   position: relative;
   display: flex;
-  width: 800px;
+  width: 900px;
   overflow: hidden;
   -webkit-mask-image: linear-gradient (90deg,transparent,#fffff 20%, #fffff 80%, transparent);
   mask-image: linear-gradient(90deg, transparent, #ffffff 20%, #ffffff 80%, transparent);
 }
 
 .scroll-item {
-  white: nowrap;
+  white-space: nowrap;
   animation: animate var(--t) linear infinite;
   animate-delay: calc(var(--t) * -1);
 }
 
 .scroll-item:nth-child(2) {
-  white: nowrap;
+  white-space: nowrap;
   animation: animate var(--t) linear infinite;
   animate-delay: calc(var(--t) * -2);
 }
