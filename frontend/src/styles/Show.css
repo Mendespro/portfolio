@@ -66,9 +66,9 @@
 }
 
 .txt-show p{
-  color: #ffffff;
+  color:rgb(216, 216, 216);
   margin: 20px 0;
-  font-size: 1rem;
+  font-size: 17px;
 }
 
 .social-icons {
@@ -77,8 +77,8 @@
   align-items: center;
   gap: 1rem;
   padding: 1rem 0;
-  margin-right: 35%;
-  border-bottom: 2.5px solid #ffffff;
+  margin-right: 30%;
+  border-bottom: 2.5px solid #1177ff;
 }
 
 .social-icons a img {

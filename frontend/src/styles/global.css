@@ -37,7 +37,7 @@ body {
   margin: 0 4px;
   border-radius: 50%;
   box-shadow: 0 0 0 10px #ffffff44, 0 0 50px #fff, 0 0 100px #fff;
-  animation: animar calc(150s / var(--i)) linear infinite;
+  animation: animar calc(400s / var(--i)) linear infinite;
   transition: transform 0.2s ease-out;
 }
 

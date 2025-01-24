@@ -21,7 +21,7 @@ const Show = () => {
                 </div>
                 <div>
                     <p>
-                        Desenvolvedor Frontend e melhorar a experiência do usuário com minhas aplicações.
+                        Desenvolvedor Front-end, mas que tem experiência com Back-end também.
                     </p>
                     <div className="social-icons">
                         <a href="https://github.com/Mendespro/" target="_blank" rel="noopener noreferrer">

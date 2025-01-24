@@ -41,8 +41,10 @@ const technologies = [
 const Skills = () => {
   return (
     <section id="skills" className="skills">
-      <div><h2>Minhas Habilidades</h2></div>
-      <div className="scroll" style={{'--t':'2s'}}>
+      <div className="title-skill">
+        <h2>Tecno<span>logias</span></h2>
+      </div>
+      <div className="scroll" style={{'--t':'30s'}}>
         {technologies.map((tech, index) => (
           <div key={index} className="scroll-item">
               <img
@@ -55,12 +57,6 @@ const Skills = () => {
         ))}
         {technologies.map((tech, index) => (
           <div key={index + technologies.length} className="scroll-item">
-            <img
-              src={tech.icon}
-              alt={tech.name}
-              className="icon"
-              loading="lazy"
-            />
             <img
               src={tech.icon}
               alt={tech.name}

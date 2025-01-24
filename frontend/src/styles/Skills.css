@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box
-}
-
 .skills {
   display: flex;
   justify-content: center;
@@ -12,13 +6,22 @@
   padding: 4rem 0;
   color: #fff;
   text-align: center;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(2px);
+  gap: 40px;
 }
   
-.skills h2 {
+.skills .title-skill h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 40px;
   color: #ffffff;
-  font-size: 1.5rem;
-  margin-bottom: 3.5rem;
+  text-align: right;
+}
+  
+.skills .title-skill h2 span{
+  font-weight: 700;
+  color: #1177ff;
+  filter: drop-shadow(0 0 0.15rem);
 }
 
 .scroll{
@@ -59,9 +62,9 @@
 
 @keyframes animate {
   0% {
-    transform: translateX(100%);
+    transform: translateX(50%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(calc(-250px * 5));
   }
 }
