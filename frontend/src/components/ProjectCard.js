@@ -4,7 +4,10 @@ import "../styles/ProjectCard.css";
 const ProjectCard = ({ project }) => (
   <div className={`project-card ${project.id % 2 === 0 ? "slide-left" : "slide-right"}`}>
     <div className="project-card-image">
-      <img src={project.image} alt={project.title} />
+      <div className="wrapper">
+        <img src={project.image} alt={project.title} className="cover-image"/>
+      </div>
+      <img src={project.image} alt={project.title} className="character"/>
     </div>
     <div className="project-card-content">
       <h2>{project.title}</h2>

@@ -19,6 +19,8 @@ import project1 from "../assets/projects/projeto1.png";
 import project2 from "../assets/projects/projeto2.png";
 import project3 from "../assets/projects/projeto3.png";
 import project4 from "../assets/projects/projeto4.png";
+import project5 from "../assets/projects/projeto5.png";
+import video1 from "../assets/projects/ProjetoMyTracker.mp4";
 
 const Home = () => {
   const [projects, setProjects] = useState([]);
@@ -33,10 +35,9 @@ const Home = () => {
           {
             id: 1,
             title: "MyTracker",
-            description:
-              "Projeto da faculdade em grupo no qual fiquei responsável por produzir a Home page do MyTracker (site que oferece espaço para amantes de cultura pop terem o controle do que estão vendo ou lendo e dar seu feedback).",
+            description: "Projeto da faculdade em grupo no qual fiquei responsável por produzir a Home page do MyTracker (site que oferece espaço para amantes de cultura pop terem o controle do que estão vendo ou lendo e dar seu feedback).",
             image: project1, 
-            link1: "https://link1.com",
+            link1: video1,
             link2: "https://github.com/colcic-uesc/front-end-project-bobos",
           },
           {
@@ -63,6 +64,14 @@ const Home = () => {
             link1: "https://mendespro.github.io/landing-page/",
             link2: "https://github.com/Mendespro/landing-page",
           },
+          {
+          id: 5,
+          title: "Pokedex",
+          description: "Desenvolvimento de Front-end de uma versão de Pokedex modo claro e escuro.",
+          image: project5,
+          link1: "https://mendespro.github.io/projeto-listagem-pokemon/",
+          link2: "https://github.com/Mendespro/projeto-listagem-pokemon",
+        },
         ];
         setProjects(mockProjects);
       } catch (error) {

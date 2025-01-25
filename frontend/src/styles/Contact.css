@@ -40,6 +40,11 @@
   background:rgba(17, 120, 255, 0.14);
   border-radius: 10px;
   box-shadow: 0 2px 5px #1177ff;
+  transition: all 0.3s ease;
+}
+
+.contact .letter-contact:hover {
+  transform: scale(1.05);
 }
 
 .contact input {
@@ -50,6 +55,7 @@
   border: none;
   background: rgba(255, 255, 255, 0.83);
   color: #777;
+  font-weight: 500;
   transition: all 0.3s ease;
 }
 
@@ -62,6 +68,7 @@
   border: none;
   background: rgba(255, 255, 255, 0.83);
   color: #777;
+  font-weight: 500;
   transition: all 0.3s ease;
 }
 
@@ -112,28 +119,41 @@
 }
 
 @media (max-width: 768px) {
-  .contact form {
-    padding: 15px;
-  }
-  .letter-contact {
-    width: 400px;
+  .contact .title-contact h2 {
+    font-size: 2rem;
   }
 
-  .contact .title-contact h2 {
-    font-size: 2.2rem;
+  .contact .letter-contact {
+    width: 90%;
+    max-width: 400px;
+    padding: 15px;
+  }
+
+  .contact .contact-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .contact input, 
+  .contact textarea {
+    width: 100%;
   }
 }
 
 @media (max-width: 480px) {
-  .contact form {
-    padding: 10px;
-  }
-
-  .letter-contact {
-    width: 250px;
-  }
-
   .contact .title-contact h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+
+  .contact .letter-contact {
+    width: 90%;
+    max-width: 350px;
+    padding: 15px;
+  }
+
+  .contact button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
   }
 }

@@ -69,31 +69,6 @@ a {
 a:hover {
   text-decoration: underline;
 }
-@media (max-width: 768px) {
-  .projects-container {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .skills ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact form {
-    padding: 20px;
-  }
-}
-  
-@media (max-width: 480px) {
-  .projects-container {
-    grid-template-columns: 1fr;
-  }
-
-  .header nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -101,4 +76,45 @@ a:hover {
 
 ::-webkit-scrollbar-thumb {
   background-color: #1177ff;
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding: 0 50px;
+  }
+
+  .bolhas span {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 20px;
+  }
+
+  .bolhas span {
+    width: 12px;
+    height: 12px;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0 10px;
+  }
+
+  .bolhas span {
+    width: 10px;
+    height: 10px;
+  }
+
+  h1, h2 {
+    font-size: 1.2rem;
+  }
 }

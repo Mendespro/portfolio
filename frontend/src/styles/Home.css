@@ -15,6 +15,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  min-height: 1330px;
   padding: 50px 20px;
   backdrop-filter: blur(2px);
   gap: 40px;
@@ -46,7 +47,7 @@
 .projects-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 25px;
   align-items: center;
 }
 
@@ -95,6 +96,7 @@
   display: flex;
   flex-direction: column;
   gap: 3.5rem;
+  z-index: 10;
 }
 
 .scroll-icons button {
@@ -114,29 +116,79 @@
   filter: drop-shadow(0 0 20px #ffffff);
 }
 
+@media (max-width: 1024px) {
+  .projects {
+    padding: 30px 15px;
+    gap: 30px;
+  }
 
-@media (max-width: 768px) {
+  .projects .title-projects h2 {
+    font-size: 2rem;
+    line-height: 35px;
+    text-align: center;
+  }
+
   .projects-container {
-    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 
-  .skills ul {
-    flex-direction: column;
-    align-items: center;
+  .scroll-to-top {
+    bottom: 3rem;
+    right: 3rem;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
   }
 
-  .contact form {
-    padding: 20px;
+  .scroll-icons {
+    top: 30%;
+    right: 1rem;
+    gap: 2.5rem;
+  }
+
+  .scroll-icons img {
+    width: 25px;
+    height: 25px;
   }
 }
 
 @media (max-width: 480px) {
-  .projects-container {
-    grid-template-columns: 1fr;
+  .home {
+    gap: 80px;
+    padding: 5px;
   }
 
-  .header nav ul {
-    flex-direction: column;
-    gap: 10px;
+  .projects {
+    padding: 20px 10px;
+    gap: 20px;
+    min-height: auto;
+  }
+
+  .projects .title-projects h2 {
+    font-size: 1.8rem;
+    line-height: 30px;
+  }
+
+  .projects-container {
+    gap: 15px;
+  }
+
+  .scroll-to-top {
+    bottom: 2.5rem;
+    right: 2.5rem;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .scroll-icons {
+    top: 35%;
+    right: 0.8rem;
+    gap: 2rem;
+  }
+
+  .scroll-icons img {
+    width: 20px;
+    height: 20px;
   }
 }

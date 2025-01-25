@@ -62,7 +62,7 @@
   border: 3px solid rgb(22, 142, 255);
   border-radius: 20px;
   cursor: pointer;
-  trasition: .8s;
+  transition: all 0.3s ease;
 }
 
 .btn-profile button:hover {
@@ -119,28 +119,87 @@
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  .projects-container {
-    grid-template-columns: 1fr 1fr;
+@media (max-width: 1200px) {
+  .interface-me {
+    gap: 100px;
   }
 
-  .skills ul {
-    flex-direction: column;
-    align-items: center;
+  .img-me {
+    width: 280px;
+    height: 360px;
   }
 
-  .contact form {
-    padding: 20px;
+  .text-me h2 {
+    font-size: 2rem;
+  }
+
+  .text-me p {
+    font-size: 16px;
   }
 }
 
-@media (max-width: 480px) {
-  .projects-container {
-    grid-template-columns: 1fr;
+@media (max-width: 992px) {
+  .interface-me {
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
   }
 
-  .header nav ul {
-    flex-direction: column;
-    gap: 10px;
+  .text-me h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .text-me p {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .btn-profile {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .interface-me {
+    padding: 20px;
+  }
+
+  .img-me {
+    width: 200px;
+    height: 280px;
+  }
+
+  .text-me h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-me p {
+    font-size: 14px;
+  }
+
+  .btn-profile button {
+    padding: 6px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .img-me {
+    width: 180px;
+    height: 240px;
+  }
+
+  .text-me h2 {
+    font-size: 1.3rem;
+  }
+
+  .text-me p {
+    font-size: 13px;
+  }
+
+  .btn-profile button {
+    padding: 5px 12px;
+    font-size: 12px;
   }
 }
