@@ -33,7 +33,9 @@ Sou Isaias R Mendes, Ciêntista da Computação. Minha paixão por tecnologia me
 Fique à vontade para me contatar por meio de:
 
 Email: mendes.isaias9@gmail.com
+
 LinkedIn: https://www.linkedin.com/in/isaias-mendes-971873226/
+
 GitHub: https://github.com/Mendespro/
 
 Sinta-se à vontade também para explorar este portfólio e me dar feedback! 😊
