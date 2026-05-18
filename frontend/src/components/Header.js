@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Header.css";
+import logo from "../assets/logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -22,7 +23,8 @@ const Header = () => {
   return (
     <header className={`header ${isScrolled ? "scrolled" : ""}`}>
       <div className="logo">
-        <span>ISAIAS</span><span className="lastn">MEN.</span>
+        {/*<span>ISAIAS</span><span className="lastn">MENDES.</span>;*/}
+        <img src={logo} alt="Logo" />
       </div>
       <div className="menu">
         <nav className={isScrolled ? "hidden" : ""}>

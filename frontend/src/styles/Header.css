@@ -38,15 +38,25 @@
   background-color: #222222dd;
 }
 
-.logo span {
-  font-size: 30px;
-  font-weight: 900;
-  filter: drop-shadow(0 0 0.15rem);
+.logo { 
+  width: auto;
+  height: 80px; 
+  
+  display: flex;
+  flex-diretion: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: auto;
+  height: 180px; 
+  filter: drop-shadow(0 0 0.4rem #b1c7ef);
+  transition: 0.4s;
 }
 
 
-.logo span:hover {
-  background-color: #1166ff;
+.logo img:hover {
   transform: scale(1.05);
   filter: drop-shadow(0 0 0.5rem #1166ff);
 }
